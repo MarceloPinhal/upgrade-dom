@@ -25,7 +25,7 @@ createThirdDiv.appendChild(createParagraphs);
 // 2.4 Inserta dinamicamente con javascript en un html una p con el texto 'Soy dinámico!'.
 const createParagraph =  document.createElement("p");
 createParagraph.innerText = "I'm dynamic"
-document.body.appendChild(createParagraph);
+document.body.appendChild(createParagraph); 
 
 // 2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 const getH2 = document.querySelector(".fn-insert-here");
@@ -52,7 +52,7 @@ const getClassFnRemoveMe = document.querySelectorAll(".fn-remove-me");
 
 getClassFnRemoveMe.forEach(element => {
     element.remove();
-})
+});
 
 // 2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
 // 	Recuerda que no solo puedes insertar elementos con .appendChild.
